@@ -1,0 +1,31 @@
+The following are the instructions available to use in this implementation of Tomasulo in python. Additional Instructions and functionalities can be added.
+
+Format : [Address, Instruction]
+
+Load : LD rd,rs1,imm
+Store : SD rs1, rs2, imm
+Add : ADD rd,rs1,rs2
+Add_Immediate :  ADDI rd,rs1,imm
+Subtract : SUB rd,rs1,rs2
+Subtract_Immediate :  SUBI rd,rs1,imm
+Multiply : MUL rd,rs1,rs2
+Multiply_Immediate :  MULI rd,rs1,imm
+Divide : DIV rd,rs1,rs2
+Divide_Immediate : DIVI rd,rs1,imm
+XOR : XOR rd,rs1,rs2 **
+OR : OR rd,rs1,rs2   **
+AND : AND rd,rs1,rs2 **
+Branch_Equal : BEQ rs1,rs2,imm
+Branch_Not_Equal : BNE rs1,rs2,imm
+Branch_Less_Than : BLT rs1,rs2,imm
+Branch_GReater_Than : BGT rs1,rs2,imm
+Jump_Link : JAL rd,imm
+Jump_Link_Register : JALR rd,rs1,imm
+Return_from_JALR: JALR rd
+END : No more instructions to process. Halt the program
+
+
+** To use XOR OR AND INSTRUCTIONS functional unit operation has to be added in the adder unit.
+
+
+All instructions need to be written in terms of Architecural registers which are limited from R0 to R31
